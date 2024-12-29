@@ -1,13 +1,13 @@
 const HowToOrder = () => {
     return (
         <section
-            className="relative grid bg-black items-center p-10 md:p-14 lg:p-16 h-96 bg-no-repeat bg-cover"
+            className="relative grid h-96 items-center bg-black bg-cover bg-no-repeat p-10 md:p-14 lg:p-16"
             style={{
                 background: "url(assets/img/tv_repair.jpg) center center",
             }}
         >
             <Line />
-            <div className="absolute w-full justify-around flex px-16 -translate-y-20">
+            <div className="absolute flex w-full -translate-y-20 justify-around px-16">
                 <Step title="Hubungi Kami">
                     Hubungi kami dan ceritakan masalah TV Anda! Kami akan
                     memberikan respon cepat dan solusi terbaik bagi TV anda!
@@ -27,27 +27,27 @@ const HowToOrder = () => {
 };
 
 const Step = ({ children, title = "", className = "" }) => (
-    <div className={`md:w-72 lg:w-full text-center self-end` + className}>
-        <h2 className="font-bold font-['Poppins'] text-xl lg:text-2xl  text-slate-900">
+    <div className={`self-end text-center md:w-72 lg:w-full` + className}>
+        <h2 className="font-['Poppins'] text-xl font-bold text-slate-900 lg:text-2xl">
             {title}
         </h2>
-        <p className="text-sm lg:text-base text-slate-600">{children}</p>
+        <p className="text-sm text-slate-600 lg:text-base">{children}</p>
     </div>
 );
 const Line = ({ className }) => (
     <div
         className={
-            `h-2 rounded w-full bg-clip-border bg-emerald-400 flex justify-around items-center ` +
+            `flex h-2 w-full items-center justify-around rounded bg-emerald-400 bg-clip-border ` +
             className
         }
     >
-        <span className="bg-emerald-400 bg-clip-border px-2 rounded-full font-bold text-white border-white border-4">
+        <span className="rounded-full border-4 border-white bg-emerald-400 bg-clip-border px-2 font-bold text-white">
             1
         </span>
-        <span className="bg-emerald-400 px-2 rounded-full font-bold text-white border-white border-4">
+        <span className="rounded-full border-4 border-white bg-emerald-400 px-2 font-bold text-white">
             2
         </span>
-        <span className="bg-emerald-400 px-2 rounded-full font-bold text-white border-white border-4">
+        <span className="rounded-full border-4 border-white bg-emerald-400 px-2 font-bold text-white">
             3
         </span>
     </div>

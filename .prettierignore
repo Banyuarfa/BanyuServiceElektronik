@@ -1,0 +1,24 @@
+# Laravel-specific directories
+/vendor
+/node_modules
+/public
+/bootstrap/cache
+/storage
+/tests
+
+# React build and dependencies
+/build
+
+# Environment and configuration files
+.env
+.env.*
+
+# Prettier-related files (if any are auto-generated)
+/.prettierrc
+/prettier.config.js
+
+# Tailwind-related files (auto-generated CSS)
+dist/output.css
+
+# Inertia-specific (if you're using compiled files)
+mix-manifest.json

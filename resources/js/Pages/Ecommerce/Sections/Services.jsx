@@ -2,7 +2,7 @@ import { EyeOffIcon, MonitorXIcon, TvMinimalIcon } from "lucide-react";
 
 const Services = () => {
     return (
-        <section className="p-10 md:p-14 lg:p-16 bg-slate-100 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="grid gap-4 bg-slate-100 p-10 md:grid-cols-2 md:p-14 lg:grid-cols-3 lg:p-16">
             <Card
                 icon={<MonitorXIcon />}
                 title="Mati Total"
@@ -45,12 +45,12 @@ const Services = () => {
 
 const Card = ({ icon, title, p, className = "" }) => {
     return (
-        <div className={`bg-white p-4 rounded-lg ` + className}>
-            <div className="bg-slate-200 inline-block p-2 rounded-lg text-3xl">
+        <div className={`rounded-lg bg-white p-4 ` + className}>
+            <div className="inline-block rounded-lg bg-slate-200 p-2 text-3xl">
                 {icon}
             </div>
-            <h4 className="mt-2 mb-1 font-bold text-slate-900">{title}</h4>
-            <p className="text-slate-600 text-sm">{p}</p>
+            <h4 className="mb-1 mt-2 font-bold text-slate-900">{title}</h4>
+            <p className="text-sm text-slate-600">{p}</p>
         </div>
     );
 };

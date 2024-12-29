@@ -1,9 +1,7 @@
-
-
 const About = () => {
     return (
-        <section className="mt-16 p-10 md:p-14 lg:p-16 bg-slate-900 rounded-t-3xl">
-            <div className="grid gap-x-8 gap md:grid-cols-2 lg:grid-cols-4">
+        <section className="mt-16 rounded-t-3xl bg-slate-900 p-10 md:p-14 lg:p-16">
+            <div className="gap grid gap-x-8 md:grid-cols-2 lg:grid-cols-4">
                 <Card
                     img="assets/img/duck.jpeg"
                     title="Teknisi Super Profesional"
@@ -37,12 +35,12 @@ const About = () => {
 const Card = ({ img, title, p, className = "", style }) => (
     <div
         className={
-            `grid grid-rows-subgrid row-span-3 text-center mt-8 ` + className
+            `row-span-3 mt-8 grid grid-rows-subgrid text-center ` + className
         }
         style={style}
     >
-        <img src={img} alt="" className="h-48 mx-auto" />
-        <h4 className="font-['Poppins'] text-2xl font-bold mt-4 mb-2 justify-self-center text-white">
+        <img src={img} alt="" className="mx-auto h-48" />
+        <h4 className="mb-2 mt-4 justify-self-center font-['Poppins'] text-2xl font-bold text-white">
             {title}
         </h4>
         <p className="text-slate-400">{p}</p>
